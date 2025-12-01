@@ -1,0 +1,9 @@
+---
+title: "Rad AI unveils next-gen speech recognition technology - AuntMinnie"
+date: 2025-12-02T00:25:56.562548
+link: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOE55eG8tNUY2SHpLRENockpFMDRHb1NRY0k4b1ZPZnZrLWlLUjYxeWpmbnlEenR0WF9LSDlXYjBSZU9oMWRqdUxzNkktRkp5VG1qUmd3RXJPUjkzNnFzd0dLLXFpNTliejNzbFVza21qYWhyR0lfUmNtZXYyeXp4OC0zQUs3VjBVUGVsbDdHdUVDNEsxV0ExMGdEbXJ6QjR5T3luUkJQZ1g2UHZ4cjllNmF3ZHhwcllWdjdjTWJrc19POHhMZTBDbUVnaE5MdWp4TnhF?oc=5"
+---
+
+<a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOE55eG8tNUY2SHpLRENockpFMDRHb1NRY0k4b1ZPZnZrLWlLUjYxeWpmbnlEenR0WF9LSDlXYjBSZU9oMWRqdUxzNkktRkp5VG1qUmd3RXJPUjkzNnFzd0dLLXFpNTliejNzbFVza21qYWhyR0lfUmNtZXYyeXp4OC0zQUs3VjBVUGVsbDdHdUVDNEsxV0ExMGdEbXJ6QjR5T3luUkJQZ1g2UHZ4cjllNmF3ZHhwcllWdjdjTWJrc19POHhMZTBDbUVnaE5MdWp4TnhF?oc=5" target="_blank">Rad AI unveils next-gen speech recognition technology</a>&nbsp;&nbsp;<font color="#6f6f6f">AuntMinnie</font>
+
+[Read full story →](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOE55eG8tNUY2SHpLRENockpFMDRHb1NRY0k4b1ZPZnZrLWlLUjYxeWpmbnlEenR0WF9LSDlXYjBSZU9oMWRqdUxzNkktRkp5VG1qUmd3RXJPUjkzNnFzd0dLLXFpNTliejNzbFVza21qYWhyR0lfUmNtZXYyeXp4OC0zQUs3VjBVUGVsbDdHdUVDNEsxV0ExMGdEbXJ6QjR5T3luUkJQZ1g2UHZ4cjllNmF3ZHhwcllWdjdjTWJrc19POHhMZTBDbUVnaE5MdWp4TnhF?oc=5)
