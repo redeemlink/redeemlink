@@ -133,9 +133,9 @@ link: "{link}"
         layout_path = hugo_site_path / "layouts" / "index.html"
         layout_path.parent.mkdir(parents=True, exist_ok=True)
         if not layout_path.exists():
-            layout_path.write_text("<!DOCTYPE html>
+            layout_path.write_text("""<!DOCTYPE html>
 <html><head><title>{{ .Site.Title }}</title><style>body { font-family: sans-serif; line-height: 1.6; margin: 2em; } ul { list-style-type: none; padding: 0; } li { margin-bottom: 1.5em; } a { text-decoration: none; color: #0056b3; } a:hover { text-decoration: underline; }</style></head>
-<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href=\"{{ .Permalink }}\">{{ .Title }}</a></h3><p>{{ .Summary }} <a href=\"{{ .Permalink }}\">Read more...</a></p></li>{{ end }}</ul></body></html>", encoding="utf-8")
+<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><p>{{ .Summary }} <a href="{{ .Permalink }}">Read more...</a></p></li>{{ end }}</ul></body></html>""", encoding="utf-8")
             
 hugo_posts_dir = hugo_site_path / "content" / "posts"
         if hugo_posts_dir.exists():
