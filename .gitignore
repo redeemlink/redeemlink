@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Hugo generated site
+hugo-site/public/
+hugo-site/resources/
+.hugo_build.lock
+
+# Local log file
+app.log

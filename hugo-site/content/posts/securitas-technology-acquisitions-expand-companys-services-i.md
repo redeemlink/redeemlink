@@ -1,0 +1,10 @@
+
+---
+title: "Securitas Technology Acquisitions Expand Company’s Services in Florida - Correctional News"
+date: 2025-12-03T11:03:22.925776
+link: "https://news.google.com/rss/articles/CBMirwFBVV95cUxNamtKNlplRmpsNlJDTFhLLUNWUGZENGVEWHZpeFc0UkstM2Q2N3ZQdHFuVGxZQVQ4TEE1LUlmOUVzSmUydHByT0hpSEw5cWg2ZUc4M3phLThsMTFfUWhLY1hpS01kQ1V1a1BVWGxWdl81YWFoZ2NzZmRXWWNyZEh4bUpEX0JBNG8wSWpVRVlPaDVVR2FqTmc3YVlUNjlLVnlyXzg2SjFFSEZEUERTOGlv?oc=5" 
+---
+
+<a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNamtKNlplRmpsNlJDTFhLLUNWUGZENGVEWHZpeFc0UkstM2Q2N3ZQdHFuVGxZQVQ4TEE1LUlmOUVzSmUydHByT0hpSEw5cWg2ZUc4M3phLThsMTFfUWhLY1hpS01kQ1V1a1BVWGxWdl81YWFoZ2NzZmRXWWNyZEh4bUpEX0JBNG8wSWpVRVlPaDVVR2FqTmc3YVlUNjlLVnlyXzg2SjFFSEZEUERTOGlv?oc=5" target="_blank">Securitas Technology Acquisitions Expand Company’s Services in Florida</a>&nbsp;&nbsp;<font color="#6f6f6f">Correctional News</font>
+
+[Read full story →](https://news.google.com/rss/articles/CBMirwFBVV95cUxNamtKNlplRmpsNlJDTFhLLUNWUGZENGVEWHZpeFc0UkstM2Q2N3ZQdHFuVGxZQVQ4TEE1LUlmOUVzSmUydHByT0hpSEw5cWg2ZUc4M3phLThsMTFfUWhLY1hpS01kQ1V1a1BVWGxWdl81YWFoZ2NzZmRXWWNyZEh4bUpEX0JBNG8wSWpVRVlPaDVVR2FqTmc3YVlUNjlLVnlyXzg2SjFFSEZEUERTOGlv?oc=5)

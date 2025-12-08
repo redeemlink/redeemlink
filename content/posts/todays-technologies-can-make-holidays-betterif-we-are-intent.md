@@ -1,0 +1,10 @@
+
+---
+title: "Today’s Technologies Can Make Holidays Better—If We Are Intentional - Forbes"
+date: 2025-12-02T02:47:53.965928
+link: "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc2lHQWwwbjc3RTZxMUZ4TTJfN2YyeU84ZlBvTGFBYzdjeFB0Qjlod3gyRXIxZHJDN1JKT3dSQzVzN1ljcEJGUnZ1U2RaUFFMTWJzQUUzMVFQWkVFMTY2RkRoS1A4RkpOZEFuQmFlU3NIc3g5MnJUV3RyWkdyc2RUYWRQSzVzV1VFc2RxTTU3Q2FVVnhEUUtSWVI1UVNRQ2ZSakxFY3pKcFdwQng3MVFVMXJiWURkVUh6WXVF?oc=5" 
+---
+
+<a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc2lHQWwwbjc3RTZxMUZ4TTJfN2YyeU84ZlBvTGFBYzdjeFB0Qjlod3gyRXIxZHJDN1JKT3dSQzVzN1ljcEJGUnZ1U2RaUFFMTWJzQUUzMVFQWkVFMTY2RkRoS1A4RkpOZEFuQmFlU3NIc3g5MnJUV3RyWkdyc2RUYWRQSzVzV1VFc2RxTTU3Q2FVVnhEUUtSWVI1UVNRQ2ZSakxFY3pKcFdwQng3MVFVMXJiWURkVUh6WXVF?oc=5" target="_blank">Today’s Technologies Can Make Holidays Better—If We Are Intentional</a>&nbsp;&nbsp;<font color="#6f6f6f">Forbes</font>
+
+[Read full story →](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc2lHQWwwbjc3RTZxMUZ4TTJfN2YyeU84ZlBvTGFBYzdjeFB0Qjlod3gyRXIxZHJDN1JKT3dSQzVzN1ljcEJGUnZ1U2RaUFFMTWJzQUUzMVFQWkVFMTY2RkRoS1A4RkpOZEFuQmFlU3NIc3g5MnJUV3RyWkdyc2RUYWRQSzVzV1VFc2RxTTU3Q2FVVnhEUUtSWVI1UVNRQ2ZSakxFY3pKcFdwQng3MVFVMXJiWURkVUh6WXVF?oc=5)
