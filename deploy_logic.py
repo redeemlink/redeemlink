@@ -97,7 +97,7 @@ link: "{link}"
         config_file = hugo_site_path / "hugo.toml"
 
         if not hugo_site_path.is_dir():
-            self._run_command(f'new site "{hugo_site_path.name}"", "Failed to create new Hugo site.", is_hugo_command=True)
+            self._run_command(f'new site "{hugo_site_path.name}"', "Failed to create new Hugo site.", is_hugo_command=True)
             
         ananke_theme_path = hugo_site_path / "themes" / "ananke"
         
