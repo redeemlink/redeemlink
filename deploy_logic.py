@@ -136,10 +136,10 @@ link: "{link}"
 <html><head><title>{{ .Site.Title }}</title><style>body { font-family: sans-serif; line-height: 1.6; margin: 2em; } ul { list-style-type: none; padding: 0; } li { margin-bottom: 1.5em; } a { text-decoration: none; color: #0056b3; } a:hover { text-decoration: underline; }</style></head>
 <body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><p>{{ .Summary }} <a href="{{ .Permalink }}">Read more...</a></p></li>{{ end }}</ul></body></html>""", encoding="utf-8")
             
-hugo_posts_dir = hugo_site_path / "content" / "posts"
-        if hugo_posts_dir.exists():
-            shutil.rmtree(hugo_posts_dir)
-        shutil.copytree("content/posts", hugo_posts_dir)
+            hugo_posts_dir = hugo_site_path / "content" / "posts"
+            if hugo_posts_dir.exists():
+                shutil.rmtree(hugo_posts_dir)
+            shutil.copytree("content/posts", hugo_posts_dir)
 
         self.status_callback("Building Hugo site...")
         self._run_command(f'--gc --cleanDestinationDir', "Failed to build Hugo site.", cwd=hugo_site_path, is_hugo_command=True)
