@@ -64,6 +64,8 @@ class HugoDeployer:
 
     def generate_hugo_posts(self, items):
         posts_dir = Path("content/posts")
+        if posts_dir.exists():
+            shutil.rmtree(posts_dir)
         posts_dir.mkdir(parents=True, exist_ok=True)
         
         for item in items:
@@ -74,9 +76,6 @@ class HugoDeployer:
             slug = "".join(c for c in title if c.isalnum() or c in " - ")[:60].strip().lower()
             slug = slug.replace(" ", "-")
             filename = posts_dir / f"{slug}.md"
-            
-            if filename.exists():
-                continue
 
             content = f"""
 ---
@@ -98,7 +97,7 @@ link: "{link}"
         config_file = hugo_site_path / "hugo.toml"
 
         if not hugo_site_path.is_dir():
-            self._run_command(f'new site "{hugo_site_path.name}"', "Failed to create new Hugo site.", is_hugo_command=True)
+            self._run_command(f'new site "{hugo_site_path.name}"", "Failed to create new Hugo site.", is_hugo_command=True)
             
         ananke_theme_path = hugo_site_path / "themes" / "ananke"
         
@@ -133,11 +132,11 @@ link: "{link}"
         layout_path = hugo_site_path / "layouts" / "index.html"
         layout_path.parent.mkdir(parents=True, exist_ok=True)
         if not layout_path.exists():
-            layout_path.write_text("""<!DOCTYPE html>
+            layout_path.write_text("<!DOCTYPE html>
 <html><head><title>{{ .Site.Title }}</title><style>body { font-family: sans-serif; line-height: 1.6; margin: 2em; } ul { list-style-type: none; padding: 0; } li { margin-bottom: 1.5em; } a { text-decoration: none; color: #0056b3; } a:hover { text-decoration: underline; }</style></head>
-<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><p>{{ .Summary }} <a href="{{ .Permalink }}">Read more...</a></p></li>{{ end }}</ul></body></html>""", encoding="utf-8")
+<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href=\"{{ .Permalink }}\">{{ .Title }}</a></h3><p>{{ .Summary }} <a href=\"{{ .Permalink }}\">Read more...</a></p></li>{{ end }}</ul></body></html>", encoding="utf-8")
             
-        hugo_posts_dir = hugo_site_path / "content" / "posts"
+hugo_posts_dir = hugo_site_path / "content" / "posts"
         if hugo_posts_dir.exists():
             shutil.rmtree(hugo_posts_dir)
         shutil.copytree("content/posts", hugo_posts_dir)
@@ -184,7 +183,7 @@ link: "{link}"
             except requests.RequestException:
                 pass
             
-            data = {"message": f"Update site: {relative_path} [ci skip]", "content": content_b64, "branch": "gh-pages"}
+            data = {"message": f"Update site: {relative_path}", "content": content_b64, "branch": "gh-pages"}
             if sha:
                 data["sha"] = sha
 
