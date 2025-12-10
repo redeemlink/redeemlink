@@ -1,0 +1,9 @@
+---
+title: "Israel's New Iron Beam Laser Defense Technology System Is Complete - i24NEWS"
+date: 2025-12-02T00:25:56.553547
+link: "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdTB4SE9MeWFIM2VQeFBSVGRMUURfWWtkbTNJYktJVnQxX2YzbS0xeDhBNGxvNDdBa0cyZmh6c2QyTDRlTmctd244QjlsakJIc3pfWTVtbWhPQXNqVFBjaEU2cTU2QXZVY3dyX0NGMnVwWlA1UmlMay1HbVBQY25Ld0hkWkpsdHNYVkY0T0dxSldjWWxSeDdDc0YzR0xpTFZqby12UHRFQmFXWFBldnYzZEhVNmVxLWxWNHc?oc=5"
+---
+
+<a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOdTB4SE9MeWFIM2VQeFBSVGRMUURfWWtkbTNJYktJVnQxX2YzbS0xeDhBNGxvNDdBa0cyZmh6c2QyTDRlTmctd244QjlsakJIc3pfWTVtbWhPQXNqVFBjaEU2cTU2QXZVY3dyX0NGMnVwWlA1UmlMay1HbVBQY25Ld0hkWkpsdHNYVkY0T0dxSldjWWxSeDdDc0YzR0xpTFZqby12UHRFQmFXWFBldnYzZEhVNmVxLWxWNHc?oc=5" target="_blank">Israel's New Iron Beam Laser Defense Technology System Is Complete</a>&nbsp;&nbsp;<font color="#6f6f6f">i24NEWS</font>
+
+[Read full story →](https://news.google.com/rss/articles/CBMiugFBVV95cUxOdTB4SE9MeWFIM2VQeFBSVGRMUURfWWtkbTNJYktJVnQxX2YzbS0xeDhBNGxvNDdBa0cyZmh6c2QyTDRlTmctd244QjlsakJIc3pfWTVtbWhPQXNqVFBjaEU2cTU2QXZVY3dyX0NGMnVwWlA1UmlMay1HbVBQY25Ld0hkWkpsdHNYVkY0T0dxSldjWWxSeDdDc0YzR0xpTFZqby12UHRFQmFXWFBldnYzZEhVNmVxLWxWNHc?oc=5)

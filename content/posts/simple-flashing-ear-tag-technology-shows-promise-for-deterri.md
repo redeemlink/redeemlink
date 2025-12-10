@@ -1,0 +1,9 @@
+---
+title: "Simple Flashing Ear Tag Technology Shows Promise for Deterring Livestock Predators - Utah State University"
+date: 2025-12-02T00:25:56.556751
+link: "https://news.google.com/rss/articles/CBMitgFBVV95cUxPREhaY3ljLUJpVV90SkNReTYwYUZFb2VsNXJjVXJmdkNNZnpTaEtlcEpQS1NOZmFnTkYtV2tfUndOWXNTYnpaaWVUakpvdmIzNVFobWpXUHFablJCT20zejZjbjZfU0RuT3pVM3B6elgyN1J1ZGI2c09pdkNQLUxvSE12aUs5bWlZZ0pSUzE3R2pHWE9QZ2xmaFFTRjNLa3ZjM1c0MEc0clFWNUdnMXI3ejBKMzRWUQ?oc=5"
+---
+
+<a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPREhaY3ljLUJpVV90SkNReTYwYUZFb2VsNXJjVXJmdkNNZnpTaEtlcEpQS1NOZmFnTkYtV2tfUndOWXNTYnpaaWVUakpvdmIzNVFobWpXUHFablJCT20zejZjbjZfU0RuT3pVM3B6elgyN1J1ZGI2c09pdkNQLUxvSE12aUs5bWlZZ0pSUzE3R2pHWE9QZ2xmaFFTRjNLa3ZjM1c0MEc0clFWNUdnMXI3ejBKMzRWUQ?oc=5" target="_blank">Simple Flashing Ear Tag Technology Shows Promise for Deterring Livestock Predators</a>&nbsp;&nbsp;<font color="#6f6f6f">Utah State University</font>
+
+[Read full story →](https://news.google.com/rss/articles/CBMitgFBVV95cUxPREhaY3ljLUJpVV90SkNReTYwYUZFb2VsNXJjVXJmdkNNZnpTaEtlcEpQS1NOZmFnTkYtV2tfUndOWXNTYnpaaWVUakpvdmIzNVFobWpXUHFablJCT20zejZjbjZfU0RuT3pVM3B6elgyN1J1ZGI2c09pdkNQLUxvSE12aUs5bWlZZ0pSUzE3R2pHWE9QZ2xmaFFTRjNLa3ZjM1c0MEc0clFWNUdnMXI3ejBKMzRWUQ?oc=5)
