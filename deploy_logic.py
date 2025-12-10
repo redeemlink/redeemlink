@@ -97,7 +97,7 @@ link: "{link}"
         config_file = hugo_site_path / "hugo.toml"
 
         if not hugo_site_path.is_dir():
-            self._run_command(f'new site "{hugo_site_path.name}"', "Failed to create new Hugo site.", is_hugo_command=True)
+            self._run_command(f'new site "{hugo_site_path.name}"", "Failed to create new Hugo site.", is_hugo_command=True)
             
         ananke_theme_path = hugo_site_path / "themes" / "ananke"
         
@@ -132,14 +132,14 @@ link: "{link}"
         layout_path = hugo_site_path / "layouts" / "index.html"
         layout_path.parent.mkdir(parents=True, exist_ok=True)
         if not layout_path.exists():
-            layout_path.write_text("""<!DOCTYPE html>
+            layout_path.write_text("<!DOCTYPE html>
 <html><head><title>{{ .Site.Title }}</title><style>body { font-family: sans-serif; line-height: 1.6; margin: 2em; } ul { list-style-type: none; padding: 0; } li { margin-bottom: 1.5em; } a { text-decoration: none; color: #0056b3; } a:hover { text-decoration: underline; }</style></head>
-<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3><p>{{ .Summary }} <a href="{{ .Permalink }}">Read more...</a></p></li>{{ end }}</ul></body></html>""", encoding="utf-8")
+<body><h1>Welcome to {{ .Site.Title }}</h1><h2>Latest News</h2><ul>{{ range .Site.RegularPages.ByDate.Reverse | first 20 }}<li><h3><a href=\"{{ .Permalink }}\">{{ .Title }}</a></h3><p>{{ .Summary }} <a href=\"{{ .Permalink }}">Read more...</a></p></li>{{ end }}</ul></body></html>", encoding="utf-8")
             
-            hugo_posts_dir = hugo_site_path / "content" / "posts"
-            if hugo_posts_dir.exists():
-                shutil.rmtree(hugo_posts_dir)
-            shutil.copytree("content/posts", hugo_posts_dir)
+hugo_posts_dir = hugo_site_path / "content" / "posts"
+        if hugo_posts_dir.exists():
+            shutil.rmtree(hugo_posts_dir)
+        shutil.copytree("content/posts", hugo_posts_dir)
 
         self.status_callback("Building Hugo site...")
         self._run_command(f'--gc --cleanDestinationDir', "Failed to build Hugo site.", cwd=hugo_site_path, is_hugo_command=True)
@@ -169,6 +169,11 @@ link: "{link}"
         
         for i, file_path in enumerate(uploadable_files):
             relative_path = file_path.relative_to(public_dir).as_posix()
+            
+            if relative_path == 'sitemap.xml':
+                self.status_callback("Skipping sitemap.xml to keep it untouched.")
+                continue
+
             self.status_callback(f"Uploading {relative_path} ({i+1}/{len(uploadable_files)})...")
             
             content_b64 = base64.b64encode(file_path.read_bytes()).decode("utf-8")
