@@ -1,9 +1,0 @@
----
-title: "Smartkem to Present Disruptive MicroLED Technology at IDW Japan 2025 - PR Newswire"
-date: 2025-12-02T00:25:56.560743
-link: "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUG12QUl3THVOdkswejRXc29EZVA3OW0xLXVPaDZqaC1mNWxuUWJKM013aEFwLXI3SmlORWJXQzJzajlFTER6TUtlRVQ5YTRiUkt1ekJiVTNuU0FoWlJ1MVBXTDQtMmlGbkVLOFdxeTVoMU5VbmZGWEhNakN5eU1DaG5IM0ZrandyZC1zRk1rYjJaWktpWURxVWxHUVFmNkZLMGMySWd0MlprbEZiRzdkdU82UWV4RFVCOW1LQlVZRXczZw?oc=5"
----
-
-<a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUG12QUl3THVOdkswejRXc29EZVA3OW0xLXVPaDZqaC1mNWxuUWJKM013aEFwLXI3SmlORWJXQzJzajlFTER6TUtlRVQ5YTRiUkt1ekJiVTNuU0FoWlJ1MVBXTDQtMmlGbkVLOFdxeTVoMU5VbmZGWEhNakN5eU1DaG5IM0ZrandyZC1zRk1rYjJaWktpWURxVWxHUVFmNkZLMGMySWd0MlprbEZiRzdkdU82UWV4RFVCOW1LQlVZRXczZw?oc=5" target="_blank">Smartkem to Present Disruptive MicroLED Technology at IDW Japan 2025</a>&nbsp;&nbsp;<font color="#6f6f6f">PR Newswire</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUG12QUl3THVOdkswejRXc29EZVA3OW0xLXVPaDZqaC1mNWxuUWJKM013aEFwLXI3SmlORWJXQzJzajlFTER6TUtlRVQ5YTRiUkt1ekJiVTNuU0FoWlJ1MVBXTDQtMmlGbkVLOFdxeTVoMU5VbmZGWEhNakN5eU1DaG5IM0ZrandyZC1zRk1rYjJaWktpWURxVWxHUVFmNkZLMGMySWd0MlprbEZiRzdkdU82UWV4RFVCOW1LQlVZRXczZw?oc=5)

@@ -1,9 +1,0 @@
----
-title: "Ukraine developing independent AI system with Google open technology, ministry says - Reuters"
-date: 2025-12-02T00:25:56.553848
-link: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNFI0Y0RKanlNQmlXVG5WZ0NOS3NELTVyNEtLeW50bzhvSXdQQjBsVURsQVozUUlwX2tfRlNnNmozdUp1djh4MEx6T3cwWmFxcVpqS3NKLVllOENBUlBSZzBoUDlueGZWZk0xMWduUXJtVWQ2S0tIbEV2VTBaVzVhUkVBWGI5MFdFaXY0ZC12YkxZZWxZdVU5bGNJUXd1dW43em5vNVdwc181X0Vud2dPVzBlTTBLZzRMMDl2dWNMaFpVYmt3UjVsbkpLQ3hidXdJUGc?oc=5"
----
-
-<a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNFI0Y0RKanlNQmlXVG5WZ0NOS3NELTVyNEtLeW50bzhvSXdQQjBsVURsQVozUUlwX2tfRlNnNmozdUp1djh4MEx6T3cwWmFxcVpqS3NKLVllOENBUlBSZzBoUDlueGZWZk0xMWduUXJtVWQ2S0tIbEV2VTBaVzVhUkVBWGI5MFdFaXY0ZC12YkxZZWxZdVU5bGNJUXd1dW43em5vNVdwc181X0Vud2dPVzBlTTBLZzRMMDl2dWNMaFpVYmt3UjVsbkpLQ3hidXdJUGc?oc=5" target="_blank">Ukraine developing independent AI system with Google open technology, ministry says</a>&nbsp;&nbsp;<font color="#6f6f6f">Reuters</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNFI0Y0RKanlNQmlXVG5WZ0NOS3NELTVyNEtLeW50bzhvSXdQQjBsVURsQVozUUlwX2tfRlNnNmozdUp1djh4MEx6T3cwWmFxcVpqS3NKLVllOENBUlBSZzBoUDlueGZWZk0xMWduUXJtVWQ2S0tIbEV2VTBaVzVhUkVBWGI5MFdFaXY0ZC12YkxZZWxZdVU5bGNJUXd1dW43em5vNVdwc181X0Vud2dPVzBlTTBLZzRMMDl2dWNMaFpVYmt3UjVsbkpLQ3hidXdJUGc?oc=5)

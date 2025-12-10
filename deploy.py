@@ -1,11 +1,11 @@
 import sys
 import logging
 from dotenv import load_dotenv
-from deploy_logic import HugoDeployer
+from astro_deploy_logic import AstroDeployer
 
 def main():
     """
-    Headless deployment script for the Google News Hugo Blaster.
+    Headless deployment script for the Google News Astro Blaster.
     This script is intended to be run by a CI/CD system.
     """
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -14,9 +14,9 @@ def main():
     load_dotenv()
     
     try:
-        # The HugoDeployer uses environment variables for configuration
+        # The AstroDeployer uses environment variables for configuration
         # and prints status updates to stdout by default.
-        deployer = HugoDeployer()
+        deployer = AstroDeployer()
         deployer.run()
         logging.info("Deployment script finished successfully.")
         sys.exit(0)

@@ -28,20 +28,21 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Hugo CLI
-        env:
-          HUGO_VERSION: 0.152.2
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
-          echo "HUGO_EXEC_PATH=$(which hugo)" >> $GITHUB_ENV
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Astro dependencies
+        run: npm install
+        working-directory: astro-site
 
       - name: Run Deployment Script
         env:
-          # This token is provided by GitHub Actions and has the necessary permissions
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # The repository name is automatically available from the context
-          REPO: ${{ github.repository }}
+          # This token is for deploying to an external repository
+          GITHUB_TOKEN: ${{ secrets.EXTERNAL_REPO_PAT }}
+          # The external repository name (e.g., new-account/new-repo)
+          REPO: ${{ secrets.EXTERNAL_REPO_NAME }}
           # These must be configured as Repository Secrets in your GitHub settings
           DOMAIN: ${{ secrets.DOMAIN }}
           RSS_QUERY: ${{ secrets.RSS_QUERY }}

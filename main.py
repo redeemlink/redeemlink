@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
 
 # Import the refactored logic
-from deploy_logic import HugoDeployer
+from astro_deploy_logic import AstroDeployer
 
 load_dotenv()
 
@@ -26,7 +26,7 @@ class Worker(QThread):
     def __init__(self):
         super().__init__()
         # The worker creates the deployer and uses its own signal emitter as the callback
-        self.deployer = HugoDeployer(status_callback=self.status.emit)
+        self.deployer = AstroDeployer(status_callback=self.status.emit)
 
     def run(self):
         try:
@@ -37,10 +37,10 @@ class Worker(QThread):
         finally:
             self.finished.emit()
 
-class GoogleNewsHugoBlaster(QMainWindow):
+class GoogleNewsAstroBlaster(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Google News Blaster Pro 2025")
+        self.setWindowTitle("Google News Astro Blaster Pro 2025")
         self.setFixedSize(520, 400)
 
         central = QWidget()
@@ -53,8 +53,6 @@ class GoogleNewsHugoBlaster(QMainWindow):
         if not all([os.getenv("GITHUB_TOKEN"), os.getenv("REPO"), os.getenv("DOMAIN")]):
             self.first_time_setup()
         
-        if not os.getenv("HUGO_EXEC_PATH"):
-            self.get_hugo_path()
 
         self.status_label = QLabel("Ready")
         self.status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -85,14 +83,6 @@ class GoogleNewsHugoBlaster(QMainWindow):
         load_dotenv()
         self.set_status("Config saved in .env! Ready to publish.")
 
-    def get_hugo_path(self):
-        hugo_path, ok = QInputDialog.getText(self, "Hugo Executable Path", "Enter the full path to hugo.exe:")
-        if not ok or not hugo_path:
-            sys.exit("Hugo executable path is required.")
-        with open(".env", "a") as f:
-            f.write(f"\nHUGO_EXEC_PATH={hugo_path}\n")
-        load_dotenv()
-
     def set_status(self, text):
         # Determine message level from text content for coloring
         level = "info"
@@ -108,7 +98,7 @@ class GoogleNewsHugoBlaster(QMainWindow):
     def start_worker(self):
         # Verify configuration before starting the worker thread
         try:
-            HugoDeployer() 
+            AstroDeployer() 
         except ValueError as e:
             QMessageBox.critical(self, "Configuration Error", str(e))
             return
@@ -138,6 +128,6 @@ if __name__ == "__main__":
         QLabel { font-size: 11pt; }
     """)
     
-    window = GoogleNewsHugoBlaster()
+    window = GoogleNewsAstroBlaster()
     window.show()
     sys.exit(app.exec())
