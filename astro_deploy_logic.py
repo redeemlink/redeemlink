@@ -81,9 +81,16 @@ class AstroDeployer:
             shutil.rmtree(astro_posts_dir) # Clear existing Astro posts
         astro_posts_dir.mkdir(parents=True, exist_ok=True) # Ensure target exists
 
+        def clean_html(raw_html):
+            cleanr = re.compile('<.*?>')
+            cleantext = re.sub(cleanr, '', raw_html)
+            return cleantext
+
         for item in items:
             title = item.title.replace('"', '')
             link = item.link
+            summary = item.summary if hasattr(item, 'summary') else ''
+            description = clean_html(summary).replace('"', '\\"').strip()[:155] + '...'
             
             # Use publish_date if available, otherwise current date
             pub_date = datetime.now()
@@ -97,7 +104,7 @@ class AstroDeployer:
             slug = slug.replace(" ", "-")
             filename = temp_posts_dir / f"{slug}.md"
 
-            content = f"---\ntitle: \"{title}\"\ndate: {pub_date.isoformat()}\nlink: \"{link}\" \n---\n\n{item.summary if hasattr(item, 'summary') else ''}\n\n[Read full story →]({link})\n"
+            content = f"---\ntitle: \"{title}\"\ndescription: \"{description}\"\ndate: {pub_date.isoformat()}\nlink: \"{link}\" \n---\n\n{summary}\n\n[Read full story →]({link})\n"
             filename.write_text(content, encoding="utf-8")
         
         # Copy generated posts to Astro's content directory
