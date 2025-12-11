@@ -20,8 +20,16 @@ class AstroDeployer:
         self.domain = os.getenv("DOMAIN")
         self.rss_query = os.getenv("RSS_QUERY", "technology")
 
-        if not all([self.github_token, self.repo, self.domain]):
-            raise ValueError("Missing required environment variables. Check your .env file.")
+        missing_vars = []
+        if not self.github_token:
+            missing_vars.append("GITHUB_TOKEN (from secret EXTERNAL_REPO_PAT)")
+        if not self.repo:
+            missing_vars.append("REPO (from secret EXTERNAL_REPO_NAME)")
+        if not self.domain:
+            missing_vars.append("DOMAIN (from secret DOMAIN)")
+
+        if missing_vars:
+            raise ValueError(f"Missing required environment variables: {', '.join(missing_vars)}. Check your repository secrets and local .env file.")
 
     def run(self):
         try:
