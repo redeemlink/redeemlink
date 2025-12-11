@@ -125,52 +125,106 @@ class AstroDeployer:
         self.status_callback("Astro site built successfully!")
 
     def deploy_to_github(self):
-        headers = {
-            "Authorization": f"token {self.github_token}",
-            "Accept": "application/vnd.github.v3+json"
-        }
-        
-        repo_api_url = f"https://api.github.com/repos/{self.repo}"
-        
-        branches_url = f"{repo_api_url}/branches"
-        r = requests.get(branches_url, headers=headers)
-        r.raise_for_status()
-        if not any(branch["name"] == "gh-pages" for branch in r.json()):
-            main_sha = requests.get(f"{branches_url}/main", headers=headers).json()["commit"]["sha"]
-            requests.post(f"{repo_api_url}/git/refs", headers=headers, json={"ref": "refs/heads/gh-pages", "sha": main_sha}).raise_for_status()
-            self.status_callback("Created gh-pages branch.")
+        self.status_callback("Deploying to GitHub Pages using Git...")
 
+        temp_deploy_dir = Path("temp_gh_pages_deploy")
+        if temp_deploy_dir.exists():
+            shutil.rmtree(temp_deploy_dir)
+        temp_deploy_dir.mkdir()
+
+        repo_url = f"https://github.com/{self.repo}.git"
+        auth_repo_url = f"https://oauth2:{self.github_token}@github.com/{self.repo}.git"
+        branch_name = "gh-pages"
+
+        cname_content = None
+        sitemap_content = None
+
+        try:
+            # Try cloning gh-pages branch
+            self.status_callback(f"Attempting to clone '{branch_name}' branch...")
+            self._run_command(f"git clone --branch {branch_name} --single-branch {auth_repo_url} {temp_deploy_dir}",
+                              f"Failed to clone '{branch_name}' branch directly.",
+                              cwd=Path("."))
+            self.status_callback(f"Cloned existing '{branch_name}' branch.")
+
+            # Preserve CNAME and sitemap.xml if they exist in the cloned branch
+            cname_path_cloned = temp_deploy_dir / "CNAME"
+            if cname_path_cloned.exists():
+                cname_content = cname_path_cloned.read_text(encoding="utf-8")
+                self.status_callback("Preserving existing CNAME file.")
+
+            sitemap_path_cloned = temp_deploy_dir / "sitemap.xml"
+            if sitemap_path_cloned.exists():
+                sitemap_content = sitemap_path_cloned.read_text(encoding="utf-8")
+                self.status_callback("Preserving existing sitemap.xml file.")
+
+        except Exception as e:
+            self.status_callback(f"'{branch_name}' branch might not exist or another cloning error occurred: {e}")
+            self.status_callback(f"Cloning 'main' branch and creating '{branch_name}'...")
+            if temp_deploy_dir.exists():
+                shutil.rmtree(temp_deploy_dir)
+            temp_deploy_dir.mkdir()
+
+            self._run_command(f"git clone --single-branch {auth_repo_url} {temp_deploy_dir}",
+                              "Failed to clone 'main' branch.",
+                              cwd=Path("."))
+            self._run_command(f"git checkout -b {branch_name}", f"Failed to create {branch_name} branch.", cwd=temp_deploy_dir)
+            self._run_command(f"git push -u origin {branch_name}", f"Failed to push new {branch_name} branch.", cwd=temp_deploy_dir)
+            self.status_callback(f"Created and pushed new '{branch_name}' branch.")
+            # No CNAME or sitemap.xml to preserve if the branch was just created
+
+        # Clear existing content in the temporary deployment directory (except .git)
+        self.status_callback("Cleaning temporary deployment directory (excluding .git)...")
+        for item in temp_deploy_dir.iterdir():
+            if item.name != ".git":
+                if item.is_dir():
+                    shutil.rmtree(item)
+                else:
+                    item.unlink()
+
+        # Copy new build files to the temporary deployment directory
+        self.status_callback("Copying new build files from astro-site/dist...")
         public_dir = Path("astro-site") / "dist"
         if not public_dir.is_dir():
             raise FileNotFoundError("Astro distribution directory not found. Build may have failed.")
         
-        uploadable_files = [f for f in public_dir.rglob("*") if f.is_file()]
+        for item in public_dir.iterdir():
+            if item.is_dir():
+                shutil.copytree(item, temp_deploy_dir / item.name, dirs_exist_ok=True)
+            else:
+                shutil.copy2(item, temp_deploy_dir / item.name)
+
+        # Restore preserved CNAME and sitemap.xml files
+        if cname_content:
+            (temp_deploy_dir / "CNAME").write_text(cname_content, encoding="utf-8")
+            self.status_callback("Restored CNAME file.")
+        elif self.domain: # Only create CNAME if not preserved and domain is set
+            (temp_deploy_dir / "CNAME").write_text(self.domain.strip(), encoding="utf-8")
+            self.status_callback(f"Created CNAME file with domain: {self.domain}")
+
+        if sitemap_content:
+            (temp_deploy_dir / "sitemap.xml").write_text(sitemap_content, encoding="utf-8")
+            self.status_callback("Restored sitemap.xml file.")
+
+
+        # Git operations: add, commit, force push
+        self.status_callback("Staging, committing, and pushing changes...")
+        self._run_command("git add .", "Failed to stage files for commit.", cwd=temp_deploy_dir)
+        self._run_command('git config user.name "Astro Deploy Bot"', "Failed to set git user name.", cwd=temp_deploy_dir)
+        self._run_command('git config user.email "deploy-bot@example.com"', "Failed to set git user email.", cwd=temp_deploy_dir)
         
-        for i, file_path in enumerate(uploadable_files):
-            relative_path = file_path.relative_to(public_dir).as_posix()
-            
-            if relative_path == 'sitemap.xml':
-                self.status_callback("Skipping sitemap.xml to keep it untouched.")
-                continue
+        try:
+            self._run_command("git commit -m 'Deploy Astro site'", "Failed to commit changes.", cwd=temp_deploy_dir)
+        except Exception as e:
+            if "nothing to commit, working tree clean" in str(e):
+                self.status_callback("No changes detected in the build output. Skipping commit and push.")
+                shutil.rmtree(temp_deploy_dir)
+                return
+            else:
+                raise
 
-            self.status_callback(f"Uploading {relative_path} ({i+1}/{len(uploadable_files)})...")
-            
-            content_b64 = base64.b64encode(file_path.read_bytes()).decode("utf-8")
-            contents_url = f"{repo_api_url}/contents/{relative_path}"
-            
-            sha = None
-            try:
-                sha_r = requests.get(contents_url, headers=headers, params={"ref": "gh-pages"})
-                if sha_r.status_code == 200:
-                    sha = sha_r.json().get("sha")
-            except requests.RequestException:
-                pass
-            
-            data = {"message": f"Update site: {relative_path}", "content": content_b64, "branch": "gh-pages"}
-            if sha:
-                data["sha"] = sha
+        self._run_command(f"git push --force origin {branch_name}", f"Failed to force push to {branch_name} branch.", cwd=temp_deploy_dir)
+        self.status_callback("Successfully deployed to GitHub Pages!")
 
-            put_r = requests.put(contents_url, headers=headers, json=data)
-            put_r.raise_for_status()
-
-        self.status_callback(f"Successfully uploaded {len(uploadable_files)} site files to gh-pages branch!")
+        # Clean up temporary directory
+        shutil.rmtree(temp_deploy_dir)
