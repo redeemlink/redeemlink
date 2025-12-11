@@ -1,9 +1,0 @@
----
-title: "CAFC Affirms PTAB Invalidation of Gesture Technology Patent Claims, Rejects Estoppel and Expired Patent Arguments - IPWatchdog.com"
-date: 2025-12-02T01:43:44.575152
-link: "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTUUyREJwSTVfc0l1dUhfaVNFb2Z0bHktLTMwT0I0c0JheWItVnU4OEhRMGhnNkV4RmR2UmtvUFU4YU5kT2U1T0JYbzZwbklNMkNWM1VScElGODI5dnJKT2ZFclpxX0lKRFpON3kxR016VGptdzdPWHFLNGFOaHFmbFQ0eThrS2E0ZHJHdlhXRlhTTGhWS0NSUzV5dVloZHN5VW5RU0JFazJMaDVXT1hNdDlIRmVUUFZNT01raUJDRmRrdzBNSTJaRG9MRWttSjNZQzRxSEkwYw?oc=5"
----
-
-<a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTUUyREJwSTVfc0l1dUhfaVNFb2Z0bHktLTMwT0I0c0JheWItVnU4OEhRMGhnNkV4RmR2UmtvUFU4YU5kT2U1T0JYbzZwbklNMkNWM1VScElGODI5dnJKT2ZFclpxX0lKRFpON3kxR016VGptdzdPWHFLNGFOaHFmbFQ0eThrS2E0ZHJHdlhXRlhTTGhWS0NSUzV5dVloZHN5VW5RU0JFazJMaDVXT1hNdDlIRmVUUFZNT01raUJDRmRrdzBNSTJaRG9MRWttSjNZQzRxSEkwYw?oc=5" target="_blank">CAFC Affirms PTAB Invalidation of Gesture Technology Patent Claims, Rejects Estoppel and Expired Patent Arguments</a>&nbsp;&nbsp;<font color="#6f6f6f">IPWatchdog.com</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTUUyREJwSTVfc0l1dUhfaVNFb2Z0bHktLTMwT0I0c0JheWItVnU4OEhRMGhnNkV4RmR2UmtvUFU4YU5kT2U1T0JYbzZwbklNMkNWM1VScElGODI5dnJKT2ZFclpxX0lKRFpON3kxR016VGptdzdPWHFLNGFOaHFmbFQ0eThrS2E0ZHJHdlhXRlhTTGhWS0NSUzV5dVloZHN5VW5RU0JFazJMaDVXT1hNdDlIRmVUUFZNT01raUJDRmRrdzBNSTJaRG9MRWttSjNZQzRxSEkwYw?oc=5)
