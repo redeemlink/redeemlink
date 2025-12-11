@@ -1,9 +1,0 @@
----
-title: "DXC Technology Opens New Office in Downtown Detroit to Drive AI Innovation - DBusiness Magazine"
-date: 2025-12-02T00:25:56.558727
-link: "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUWV6LW44bmxBV1lhWG5uY1hHZXF5UUdBSlpnZFhlZk1OZHZSTlRIYlFJaDZJajl1T1pkU1VtRUc5aWVYRTdva29BcmR1TEhyZ2VhLUtZaXlHekw5SjdmYjUybElxTVJqazNPMlo3bnVteHR3ZW9uNndmNTBpemh3VkVnS0dtaGQzS19xemI4Mzgxb3hIdUoxNzlKd0h1TjQ2bGZ3REs4Wi1PNkI0NGlxeHdwckFMSVVYMHQxc09CVlJpLThHN1NZ?oc=5"
----
-
-<a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOUWV6LW44bmxBV1lhWG5uY1hHZXF5UUdBSlpnZFhlZk1OZHZSTlRIYlFJaDZJajl1T1pkU1VtRUc5aWVYRTdva29BcmR1TEhyZ2VhLUtZaXlHekw5SjdmYjUybElxTVJqazNPMlo3bnVteHR3ZW9uNndmNTBpemh3VkVnS0dtaGQzS19xemI4Mzgxb3hIdUoxNzlKd0h1TjQ2bGZ3REs4Wi1PNkI0NGlxeHdwckFMSVVYMHQxc09CVlJpLThHN1NZ?oc=5" target="_blank">DXC Technology Opens New Office in Downtown Detroit to Drive AI Innovation</a>&nbsp;&nbsp;<font color="#6f6f6f">DBusiness Magazine</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMixwFBVV95cUxOUWV6LW44bmxBV1lhWG5uY1hHZXF5UUdBSlpnZFhlZk1OZHZSTlRIYlFJaDZJajl1T1pkU1VtRUc5aWVYRTdva29BcmR1TEhyZ2VhLUtZaXlHekw5SjdmYjUybElxTVJqazNPMlo3bnVteHR3ZW9uNndmNTBpemh3VkVnS0dtaGQzS19xemI4Mzgxb3hIdUoxNzlKd0h1TjQ2bGZ3REs4Wi1PNkI0NGlxeHdwckFMSVVYMHQxc09CVlJpLThHN1NZ?oc=5)

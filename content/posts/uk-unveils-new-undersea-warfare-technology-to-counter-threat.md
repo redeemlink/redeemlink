@@ -1,9 +1,0 @@
----
-title: "UK unveils new undersea warfare technology to counter threat from Russia - navalnews.com"
-date: 2025-12-09T18:51:21
-link: "https://news.google.com/rss/articles/CBMiugFBVV95cUxPLVBNTEhhLWw1RlBCNlVWN3pIUUFyWTRfLUx5WHRia3daVVV1ZkJVczZCcVU1Wjd1VXQzX2NLMzlQNG95WUZmeFFHdDQtQmFhOTZjd0hzeHQxZVQ1aERWRDMwemxRMkVHaHpSVDR4aFJ4OFBKWU1VTV9XZ1NfTDJnNk9WMzUwWTNLY0RFVkZoWWZHN1l6MmJ1Z3JXbFJIZHN4R2p2clU0WnN2dXVxQldwLWtaSU45bE9ZdEE?oc=5" 
----
-
-<a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPLVBNTEhhLWw1RlBCNlVWN3pIUUFyWTRfLUx5WHRia3daVVV1ZkJVczZCcVU1Wjd1VXQzX2NLMzlQNG95WUZmeFFHdDQtQmFhOTZjd0hzeHQxZVQ1aERWRDMwemxRMkVHaHpSVDR4aFJ4OFBKWU1VTV9XZ1NfTDJnNk9WMzUwWTNLY0RFVkZoWWZHN1l6MmJ1Z3JXbFJIZHN4R2p2clU0WnN2dXVxQldwLWtaSU45bE9ZdEE?oc=5" target="_blank">UK unveils new undersea warfare technology to counter threat from Russia</a>&nbsp;&nbsp;<font color="#6f6f6f">navalnews.com</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMiugFBVV95cUxPLVBNTEhhLWw1RlBCNlVWN3pIUUFyWTRfLUx5WHRia3daVVV1ZkJVczZCcVU1Wjd1VXQzX2NLMzlQNG95WUZmeFFHdDQtQmFhOTZjd0hzeHQxZVQ1aERWRDMwemxRMkVHaHpSVDR4aFJ4OFBKWU1VTV9XZ1NfTDJnNk9WMzUwWTNLY0RFVkZoWWZHN1l6MmJ1Z3JXbFJIZHN4R2p2clU0WnN2dXVxQldwLWtaSU45bE9ZdEE?oc=5)

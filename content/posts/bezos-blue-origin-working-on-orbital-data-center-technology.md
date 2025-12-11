@@ -1,9 +1,0 @@
----
-title: "Bezos' Blue Origin working on orbital data center technology, WSJ reports - Reuters"
-date: 2025-12-10T17:54:44
-link: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaS1wdWZDNzgzekdFV1dYTkxhbF96R29HSVM1YVNLRlJlT19lZGpLNkF5eW1EdkExWHdsMWFvd2ZoMkZmbFhoZnBCbXFzcXY5aENNS0QyS1hIOVFNVjVYZVJ4Z2xBYy15UzU3XzNUbUhyX01KeWlaOUZQVU14WXBPQkVDMjdVWE93ZFZfM1FjbHJMX1ZyMGQ2dFprLTRLU3hoVDU3cDY3T2k0RDI5T0l6VUdVTDd5ZS1sQklaRkFBU01ITUxBcHdCLQ?oc=5" 
----
-
-<a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaS1wdWZDNzgzekdFV1dYTkxhbF96R29HSVM1YVNLRlJlT19lZGpLNkF5eW1EdkExWHdsMWFvd2ZoMkZmbFhoZnBCbXFzcXY5aENNS0QyS1hIOVFNVjVYZVJ4Z2xBYy15UzU3XzNUbUhyX01KeWlaOUZQVU14WXBPQkVDMjdVWE93ZFZfM1FjbHJMX1ZyMGQ2dFprLTRLU3hoVDU3cDY3T2k0RDI5T0l6VUdVTDd5ZS1sQklaRkFBU01ITUxBcHdCLQ?oc=5" target="_blank">Bezos' Blue Origin working on orbital data center technology, WSJ reports</a>&nbsp;&nbsp;<font color="#6f6f6f">Reuters</font>
-
-[Read full story →](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaS1wdWZDNzgzekdFV1dYTkxhbF96R29HSVM1YVNLRlJlT19lZGpLNkF5eW1EdkExWHdsMWFvd2ZoMkZmbFhoZnBCbXFzcXY5aENNS0QyS1hIOVFNVjVYZVJ4Z2xBYy15UzU3XzNUbUhyX01KeWlaOUZQVU14WXBPQkVDMjdVWE93ZFZfM1FjbHJMX1ZyMGQ2dFprLTRLU3hoVDU3cDY3T2k0RDI5T0l6VUdVTDd5ZS1sQklaRkFBU01ITUxBcHdCLQ?oc=5)
