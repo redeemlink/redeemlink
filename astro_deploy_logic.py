@@ -1,3 +1,4 @@
+import html
 import os
 import logging
 import base64
@@ -231,3 +232,4 @@ class AstroDeployer:
 
         # Clean up temporary directory
         shutil.rmtree(temp_deploy_dir)
+
