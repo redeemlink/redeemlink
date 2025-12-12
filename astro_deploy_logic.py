@@ -82,8 +82,11 @@ class AstroDeployer:
         astro_posts_dir.mkdir(parents=True, exist_ok=True) # Ensure target exists
 
         def clean_html(raw_html):
-            cleanr = re.compile('<.*?>')
+            # Use a non-greedy regex that handles newlines inside tags
+            cleanr = re.compile('<.*?>', re.DOTALL)
             cleantext = re.sub(cleanr, '', raw_html)
+            # Also remove any '---' sequences that could conflict with frontmatter
+            cleantext = cleantext.replace('---', '')
             return cleantext
 
         for item in items:
