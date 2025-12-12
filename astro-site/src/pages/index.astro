@@ -1,18 +1,40 @@
----
 import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const posts = await getCollection('posts');
-const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				list-style-type: none;
+				padding: 0;
+			}
+			li {
+				margin-bottom: 1.5em;
+			}
+			a {
+				text-decoration: none;
+				color: #0056b3;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
@@ -21,13 +43,13 @@ const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.val
 			{
 				sortedPosts.length > 0 ? (
 					<ul>
-						{sortedPosts.map((post) => (
+						{sortedPosts.slice(0, 10).map((post) => (
 							<li>
 								<h3>
-									<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+									<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
 								</h3>
-								<p>
-									<small>{post.data.date.toLocaleDateString()}</small>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
 								</p>
 							</li>
 						))}
