@@ -89,8 +89,8 @@ class AstroDeployer:
         for item in items:
             title = item.title.replace('"', '')
             link = item.link
-            summary = item.summary if hasattr(item, 'summary') else ''
-            description = clean_html(summary).replace('"', '\\"').strip()[:155] + '...'
+            summary = clean_html(item.summary) if hasattr(item, 'summary') else ''
+            description = summary.replace('"', '\\"').strip()[:155] + '...'
             
             # Use publish_date if available, otherwise current date
             pub_date = datetime.now()
