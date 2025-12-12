@@ -110,6 +110,9 @@ class AstroDeployer:
 
             content = f"---\ntitle: \"{title}\"\ndescription: \"{description}\"\npubDate: {pub_date.isoformat()}\nlink: \"{link}\" \n---\n\n{summary}\n\n[Read full story →]({link})\n"
             filename.write_text(content, encoding="utf-8")
+            self.status_callback(f"--- DEBUG: CONTENT FOR {filename} ---")
+            self.status_callback(content)
+            self.status_callback(f"--- END DEBUG: CONTENT FOR {filename} ---")
         
         # Copy generated posts to Astro's content directory
         shutil.copytree(temp_posts_dir, astro_posts_dir, dirs_exist_ok=True)
@@ -232,4 +235,5 @@ class AstroDeployer:
 
         # Clean up temporary directory
         shutil.rmtree(temp_deploy_dir)
+
 
