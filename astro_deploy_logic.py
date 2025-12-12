@@ -61,7 +61,7 @@ class AstroDeployer:
         if process.returncode != 0:
             log_message = f"{error_message}\nStdout: {process.stdout}\nStderr: {process.stderr}"
             logging.error(log_message)
-            raise Exception(f"{error_message}. See logs for details.")
+            raise Exception(f"{error_message}. See logs for details. STDOUT: {process.stdout}")
         return process.stdout
 
     def fetch_google_news(self):
